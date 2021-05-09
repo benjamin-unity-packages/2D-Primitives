@@ -5,53 +5,45 @@ using UnityEngine;
 namespace BenjiDev {
     public static class Primitives2D
     {
-        private static GameObject Instantiate(GameObject prefab, Vector2 at, Color color)
+        public static GameObject Capsule()
         {
-            GameObject instance = Object.Instantiate(prefab);
-            instance.transform.position = at;
-            instance.GetComponent<SpriteRenderer>().material.color = color;
-            return instance;
+            return Object.Instantiate(Resources.Load<GameObject>("Capsule"));
         }
 
-        public static GameObject Capsule(Vector2 at, Color color)
+        public static GameObject Character()
         {
-            return Instantiate(Resources.Load<GameObject>("Capsule"), at, color);
+            return Object.Instantiate(Resources.Load<GameObject>("Character"));
         }
 
-        public static GameObject Character(Vector2 at, Color color)
+        public static GameObject Circle()
         {
-            return Instantiate(Resources.Load<GameObject>("Character"), at, color);
+            return Object.Instantiate(Resources.Load<GameObject>("Circle"));
         }
 
-        public static GameObject Circle(Vector2 at, Color color)
+        public static GameObject Diamond()
         {
-            return Instantiate(Resources.Load<GameObject>("Circle"), at, color);
+            return Object.Instantiate(Resources.Load<GameObject>("Diamond"));
         }
 
-        public static GameObject Diamond(Vector2 at, Color color)
+        public static GameObject HexagonFlatTop()
         {
-            return Instantiate(Resources.Load<GameObject>("Diamond"), at, color);
+            return Object.Instantiate(Resources.Load<GameObject>("HexagonFlatTop"));
         }
 
-        public static GameObject HexagonFlatTop(Vector2 at, Color color)
+        public static GameObject HexagonPointTop()
         {
-            return Instantiate(Resources.Load<GameObject>("HexagonFlatTop"), at, color);
-        }
-
-        public static GameObject HexagonPointTop(Vector2 at, Color color)
-        {
-            return Instantiate(Resources.Load<GameObject>("HexagonPointTop"), at, color);
+            return Object.Instantiate(Resources.Load<GameObject>("HexagonPointTop"));
 
         }
 
-        public static GameObject Square(Vector2 at, Color color)
+        public static GameObject Square()
         {
-            return Instantiate(Resources.Load<GameObject>("Square"), at, color);
+            return Object.Instantiate(Resources.Load<GameObject>("Square"));
         }
 
-        public static GameObject SquareRounded(Vector2 at, Color color)
+        public static GameObject SquareRounded()
         {
-            return Instantiate(Resources.Load<GameObject>("SquareRounded"), at, color);
+            return Object.Instantiate(Resources.Load<GameObject>("SquareRounded"));
         }
     }
 }
