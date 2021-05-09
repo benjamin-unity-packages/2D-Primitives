@@ -1,0 +1,18 @@
+{
+  "name": "com.benjidev.2dprimitives",
+  "displayName": "2D Primitives",
+  "version": "2.0.0",
+  "unity": "2020.3",
+  "description": "Simple wrapper around instantiating some native unity 2D textures,\n(Squares, Capsules, Circles etc...). \nUseful for prototyping simple games.\n\nExample Usage:\n\nPrimitives2D.Square(Vector2.zero, Color.red);",
+  "keywords": [
+    "2d",
+    "Primitive",
+    "Primitives",
+    "Primitives2D",
+    "Prototyping",
+    "Simple"
+  ],
+  "category": "2D",
+  "type": "library",
+  "unityRelease": "3f1"
+}
