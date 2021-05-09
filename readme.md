@@ -2,4 +2,4 @@ Simple wrapper around instantiating unity 2D Primitives, (Squares, Capsules, Cir
 
 Example Usage: 
 
-Primitives2D.Square(Vector2.zero, Color.red);
+GameObject square = Primitives2D.Square(Vector2.zero, Color.red);
